@@ -3,9 +3,9 @@
 	<head>
 		<title>Formulário </title>
 		<meta charset="utf-8">
-		
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link rel="stylesheet" href="formulario.css">
+
 	</head>
 
 <body>
@@ -13,7 +13,7 @@
 
 <!-- titulo do formulario e textinho para o usuario visualizar -->
 
-	<h2> SOLICITAÇÃO DE<link rel="import" href="http://example.com/elements.html"> USUÁRIO </h2>
+	<h2 class="active"> SOLICITAÇÃO DE USUÁRIO </h2> 
 
 	<p class = "usertext">Preencha o formulário de acordo com as informações solicitadas.Em caso de dúvidas, contate da Coordenação de Modernização e Informática através do e-mail: cmo@defensoria.ba.def.br ou utilizando a nossa central de atendimento, através do número: (71) 3117-9198
 	</p>
@@ -29,19 +29,19 @@
 		<h3 class = "subtitulo">Dados para contato </h3>
 
 		<p class = "question">Nome do solicitante <font color="#FF0000">*</font> </p>
+
 	<form action="index.php" method="post">
-		<input type="text" name="nomeContato" placeholder="Digite o seu nome" />
-			<p class = "question">Telefone </p>
-	
-	    <input type="text" placeholder="Sua resposta" />
+		<input  type="text" name="nomeContato" placeholder="Digite o seu nome" />
+			<p>Telefone </p>
+	    <input  type="text" placeholder="Sua resposta" />
 	
 		<p class = "question"> Nome do responsável pelo setor <font color="#FF0000">*</font> </p>
     
-	    <input type="text" placeholder="Sua resposta" />
+	    <input  type="text" placeholder="Sua resposta" />
 	
 	<p class = "question"> E-mail institucional do responsável pelo setor<font color="#FF0000">*</font>	 </p><p class = "usertext">Certifique-se de que informou o e-mail do responsável corretamente.</p>
 	   
-	    <input type="text" placeholder="Sua resposta" />
+	    <input  type="text" placeholder="Sua resposta" />
 	
 
 <!-- dados pessoais -->
@@ -57,7 +57,6 @@
 		  
 	    <input type="text" placeholder="Sua resposta" />
 		  
-
 		<p class = "question">RG<font color="#FF0000">*</font> </p>
 		  
 	    <input type="text" placeholder="Sua resposta" />
@@ -80,7 +79,7 @@
 	       
 	    <input type="text" placeholder="Sua resposta" />
 	      
-	   	<p class = "question">Estado<font color="#FF0000">*</font></p>
+	   	<p>Estado<font color="#FF0000">*</font></p>
 	      <select name="estado"> 
 		<option value="estado">Escolher</option> 
 		<option value="ac">Acre</option> 
@@ -134,7 +133,7 @@
 		<p class = "question">Complemento</p>
 		 
 	    <input type="text" placeholder="Sua resposta" />
-	     
+
 
 	     <!-- informações funcionais -->
 
@@ -251,7 +250,6 @@
 				
 				<input type="checkbox" name="ged" value="sistema">PJE (Apenas Defensor Público)<br></br>
 	       		
-
 	       		<input type="checkbox" name="prodeb" value="sistema"> PRODEB<br></br>
 
 	       		<input type="checkbox" name="protocolo" value="sistema"> PROTOCOLO<br></br>
@@ -264,8 +262,10 @@
 
 	       		<input type="checkbox" name="sdesk" value="sistema"> SERVICEDESK<br></br>
 
-	       		<input type="submit" name="end" value="cadastrar">
-                
+	       		<button type="button" class="btn btn-success">Cadastrar</button>
+
+	       		
+
 	       </form>
 
 	      	
